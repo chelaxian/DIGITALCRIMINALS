@@ -1,5 +1,5 @@
-# OnlyFans DataScraper (Python 3.10.1+)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/DIGITALCRIMINAL/OnlyFans.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DIGITALCRIMINAL/OnlyFans/context:python)
+# of DataScraper (Python 3.10.1+)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/DIGITALCRIMINAL/of.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DIGITALCRIMINAL/of/context:python)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/0xHoarder.svg?style=social&label=Follow%200xhoarder)](https://twitter.com/0xHoarder)
 # ![app-token](docs/assets/img/64255399-96a86700-cf21-11e9-8c62-87a483f33701.png)
@@ -36,7 +36,7 @@ You have to fill in the following:
 - `{"x_bc":"x-bc_value"}`
 - `{"user_agent":"user-agent_value"}`
 
-Go to www.onlyfans.com and login, open the network debugger, then check the image below on how to get said above auth values. Using Chrome for this process is recommended, as other browsers sometimes have issues producing values that will auth properly.
+Go to www.of.com and login, open the network debugger, then check the image below on how to get said above auth values. Using Chrome for this process is recommended, as other browsers sometimes have issues producing values that will auth properly.
 
 ![app-token](docs/assets/img/3.png)
 ![app-token](docs/assets/img/4.png)
@@ -134,7 +134,7 @@ The list below are unique identifiers that you must include.
 You can choose one or more.
 
     Default = "{site_name}/{model_username}/{api_type}/{value}/{media_type}"
-    Default Translated = "OnlyFans/belledelphine/Posts/Free/Images"
+    Default Translated = "of/belledelphine/Posts/Free/Images"
 
     {model_username} = belledelphine
 
@@ -161,7 +161,7 @@ The list below are unique identifiers that you must include.
 You must choose one or more.
 
     Default = "{site_name}/{model_username}/Metadata"
-    Default Translated = "OnlyFans/belledelphine/Metadata"
+    Default Translated = "of/belledelphine/Metadata"
 
     {model_username} = belledelphine
 
@@ -199,7 +199,7 @@ Usage: You can automatically choose which site you want to scrape.
 
     Default = ""
 
-    Inputs: onlyfans, fansly, starsavn
+    Inputs: of, fansly, starsavn
 
 ### auto_media_choice:
 Types: list|str|bool
@@ -340,7 +340,7 @@ Types: list|str|bool
 
     This setting allows you to remove usernames when you choose the "scrap all" option by using lists or targetting specific usernames.
 
-    1. Go to https://onlyfans.com/my/lists and create a new list; you can name it whatever you want but I called mine "Blacklisted".
+    1. Go to https://of.com/my/lists and create a new list; you can name it whatever you want but I called mine "Blacklisted".
     Add the list's name to the config.
     Example: "blacklist_name": "Blacklisted"
 
@@ -351,13 +351,13 @@ Types: list|str|bool
 >## Running the app via docker
 >>Build and run the image, mounting the appropriate directories:
 >
->>`docker build -t only-fans . && docker run -it --rm --name onlyfans -v ${PWD}/.settings:/usr/src/app/.settings -v ${PWD}/.profiles:/usr/src/app/.profiles -v ${PWD}/.sites:/usr/src/app/.sites only-fans`
+>>`docker build -t only-fans . && docker run -it --rm --name of -v ${PWD}/.settings:/usr/src/app/.settings -v ${PWD}/.profiles:/usr/src/app/.profiles -v ${PWD}/.sites:/usr/src/app/.sites only-fans`
 
 >## Running on Linux
 >>[Running in Linux](/docs/Linux.md)
 
->### OnlyFans
->>[X34's Collection of Scrapers](https://forum.sexy-egirls.com/threads/onlyfans-downloading-a-complete-guide-for-pc-and-mobile.70618/page-9)
+>### of
+>>[X34's Collection of Scrapers](https://forum.sexy-egirls.com/threads/of-downloading-a-complete-guide-for-pc-and-mobile.70618/page-9)
 
 >### Fansly
 >>[X34's Tutorial](https://forum.sexy-egirls.com/threads/fansly-downloading-a-work-in-progress.132433/)
@@ -385,11 +385,11 @@ Before troubleshooting, make sure you're using Python 3.10.1 and the latest comm
 
 > Enjoy the free content. | This has been patched lol.
 
-## Do OnlyFans or OnlyFans models know I'm using this script?
+## Do of or of models know I'm using this script?
 
-> OnlyFans may know that you're using this script, but I try to keep it as anon as possible.
+> of may know that you're using this script, but I try to keep it as anon as possible.
 
-> Generally, models will not know unless OnlyFans tells them but other than that there is identifiable information in the metadata folder which contains your IP address, so don't share it unless you're using a proxy/vpn or just don't care.
+> Generally, models will not know unless of tells them but other than that there is identifiable information in the metadata folder which contains your IP address, so don't share it unless you're using a proxy/vpn or just don't care.
 
 ## Do you collect session information?
 
@@ -397,7 +397,7 @@ Before troubleshooting, make sure you're using Python 3.10.1 and the latest comm
 
 ## Disclaimer (lmao):
 
-> OnlyFans is a registered trademark of Fenix International Limited.
+> of is a registered trademark of Fenix International Limited.
 
 > The contributors of this script isn't in any way affiliated with, sponsored by, or endorsed by Fenix International Limited.
 
